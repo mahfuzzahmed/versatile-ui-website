@@ -9,10 +9,12 @@ body{
     font-family: "Inter", sans-serif;
     background-color: black;
     color: white;
+}
+/* shared styles */
+.navbar, .banner , main{
     width: 90%;
     margin: 0 auto;
 }
-/* shared styles */
 .btn-primary{
     width: 92px ;
     padding: 8px 20px;
@@ -32,7 +34,6 @@ body{
     display: flex;
     gap: 45px;
    align-items: center;
- 
    border: 2px outset  rgba(255, 255, 255, 0.1);
    border-radius: 39px;
 }
@@ -52,11 +53,57 @@ font-size: 1rem;
   margin-right: 10px;
 }
 /* banner section */
-.hero{
-   
+/* habit section */
+.habit-section{
+    margin-top: 100px;
 }
-.banner{
-    margin-top: 50px;
+.habit-content{
+    text-align: center;
+    margin-bottom: 58px;
+}
+.habit-content h2{
+    font-size: 3rem;
+    margin-bottom: 14px;
+}
+.habit-content p{
+    font-size: 0.875rem;
+    color: rgba(255, 255, 255, 0.5);
+    margin-top: 6px;
+}
+
+
+.habit-img{
+    padding: 0 25px;
+}
+.habit-img img{
+    width: 100%;
+    border-radius: 50%;
+    border: 2px outset  rgba(255, 255, 255, 0.1);
+    
+
+}
+
+.card{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    /* border: 2px solid yellow; */
+    gap: 40px;
+}
+.habit{
+    /* border: 2px solid red; */
+}
+.card-content{
+    text-align: center;
+    margin-top: 30px;
+}
+.card-content h4{
+    font-weight: 600;
+    font-size: 1.125rem;
+}
+.card-content p{
+    font-size: 0.875rem;
+    color: rgba(255, 255, 255, 0.5);
+    margin-top: 6px;
 }
 
 
@@ -76,5 +123,11 @@ font-size: 1rem;
     }
     .navbar{
         margin-top: 50px ;
+    }
+    /* habits section */
+    .card{
+   
+        grid-template-columns: 1fr;
+      
     }
 }
