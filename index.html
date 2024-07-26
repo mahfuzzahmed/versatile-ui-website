@@ -28,7 +28,7 @@
     </header>
     <main>
         <!-- habit section -->
-        <section class="habit-section">
+        <section class="habit-section auto-margin">
             <div class="habit-content">
                 <h2>Change Your Habits</h2>
                 <p>We believe fitness should be accessible to everyone, everywhere, regardless of income or <br>access to a gym.</p>
@@ -79,9 +79,9 @@
         </section>
 
         <!-- run an extra -->
-        <section class="run-container">
+        <section class="run-container auto-margin">
             <div class="run-content">
-                <h2 class="h2 run-title">Run an Extra 
+                <h2 class="h2 run-title">Run an Extra <br>
                     Mile Easily</h2>
                 <p class="p run-description">We believe fitness should be accessible to everyone,<br> everywhere, regardless of income or access to a gym. With <br>hundreds of professional workouts.</p>
                 <button class="rn-btn">Join Now</button>
@@ -90,6 +90,70 @@
                 <img src="images/run.jpg" alt="">
             </div>
         </section>
+        <!-- bmi calculator section -->
+         <section>
+            <div class="bmi-upper-section auto-margin">
+                <h2 class="h2 upper-title">BMI Calculator</h2>
+                <p class="p">We believe fitness should be accessible to everyone, everywhere, regardless of income or access to a gym.</p>
+            </div>
+         </section>
+
+         <!-- bmi chart -->
+          <section class="bmi-banner">
+            <div class="table-container">
+                <h4 class="tb-title">BMI Calculator Chart</h4>
+                <table class="table">
+                    <thead>
+                        <tr>
+                            <td>BMI</td>
+                            <td>Weight Status</td>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Below 18.5</td>
+                            <td>Underweight</td>
+                        </tr>
+                        <tr>
+                            <td>18.5 - 24.9</td>
+                            <td>Healthy</td>
+                        </tr>
+                        <tr>
+                            <td>25.0 - 29.9</td>
+                            <td>Overweight</td>
+                        </tr>
+                        <tr>
+                            <td>30.0 - and Above</td>
+                            <td>Obese</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <div class="form-container">
+                <div class="form-chlid1 ">
+                    <div class="child1-content">
+                        <h4>Calculate your BMI</h4>
+                        <p>We believe fitness should be accessible to everyone, everywhere, regardless of <br>income or access to a gym.</p>
+                    </div>
+                    <div class="box-container">
+                        <div class="row-01">
+                            <input placeholder="Height/cm" type="text" class="double-box">
+                            <input placeholder="Weight/kg" type="text" class="double-box">
+                        </div>
+                        <div class="row-02">
+                            <input placeholder="Weight/kg" type="text" class="double-box">
+                            <select class="double-box" name="" id=""><option value="">Sex</option></select>
+                        </div>
+                        <div class="row-03">
+                            <select placeholder="Weight/kg" class="double-box" name="" id=""><option value="">Select an activity factor</option></select>
+                        </div>
+                        <div>
+                            <button class="cal-btn">Calculate</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+          </section>
     </main>
     
 </body>
