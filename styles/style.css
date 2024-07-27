@@ -22,7 +22,7 @@ body {
     font-size: 0.875rem;
     color: rgba(255, 255, 255, 0.5);
 }
-
+.team,
 .navbar,
 .banner,
 .auto-margin {
@@ -240,7 +240,7 @@ table {
     /* border: 2px solid red; */
     margin: 0 auto;
     margin-top: 52px;
-    margin-bottom: 95px;
+    margin-bottom: 30px;
 
 }
 
@@ -307,7 +307,57 @@ table {
     border: none;
     border-radius: 42px;
     margin-top: 34px;
+    margin-bottom: 52px;
 }
+/* meet our team section */
+.our-team{
+    text-align: center;
+}
+/* team banner */
+.team{
+    /* border: 2px solid yellow; */
+    padding: 20px 20px;
+    background-color: rgba(34, 34, 34, 1) ;
+    border-radius: 18px;
+}
+.trainer-container{
+    /* border: 2px solid red; */
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 20px;
+}
+.trainer{
+    position: relative;
+}
+.pic-info{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-166px,100px);
+}
+.trainer-img{
+    width: 377px;
+    height: 310px;
+    /* border: 2px solid red; */
+    opacity: 79%;
+    
+}
+.trainer img{
+    width: 100%;
+    height: 100%;
+    border-radius: 18px;
+    object-fit: cover;
+    
+}
+.pic-info h6{
+    font-size: 1.25rem;
+}
+.pic-info p{
+    font-size:0.875rem;
+    color: rgba(255, 255, 255, 0.5);
+}
+
 
 /* responsive styles */
 @media screen and (max-width:576px) {
@@ -375,5 +425,18 @@ table {
         /* border: 2px solid yellow; */
         width: 100%;
     }
-   
+   /* team banner section */
+   .trainer-container{
+    grid-template-columns: 1fr;
+}
+.trainer-img{
+    width: 313px;
+    height: 272px;
+    margin: 0 auto;
+    
+}
+.pic-info{
+    transform: translate(-140px,80px);
+}
+
 }
