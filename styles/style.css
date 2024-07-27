@@ -22,6 +22,9 @@ body {
     font-size: 0.875rem;
     color: rgba(255, 255, 255, 0.5);
 }
+
+.last-word,
+.contents-container,
 .team,
 .navbar,
 .banner,
@@ -196,10 +199,12 @@ th {
     border: 1px solid rgba(255, 255, 255, 0.5);
     padding: 13px 18px;
 }
-td{
+
+td {
     color: rgba(255, 255, 255, 0.5);
 }
-thead td{
+
+thead td {
     color: white;
 }
 
@@ -230,7 +235,8 @@ thead td{
     margin-bottom: 34px;
     color: rgba(255, 255, 255, 0.5);
 }
-.child1-content{
+
+.child1-content {
     /* border: 2px solid red; */
     width: 79%;
     margin: 0 auto;
@@ -260,14 +266,15 @@ table {
     width: 79%;
     margin: 0 auto;
 }
-.double-box{
+
+.double-box {
     width: 100%;
     border: 2px solid yellow;
 }
 
 .row-01 {
     display: grid;
-    grid-template-columns:2fr 2fr;
+    grid-template-columns: 2fr 2fr;
     gap: 12px;
     margin-bottom: 12px;
 }
@@ -300,7 +307,8 @@ table {
     border-radius: 8px;
     border: none;
 }
-.cal-btn{
+
+.cal-btn {
     background-color: rgba(230, 83, 60, 1);
     color: white;
     padding: 16px 70px;
@@ -309,56 +317,139 @@ table {
     margin-top: 34px;
     margin-bottom: 52px;
 }
+
 /* meet our team section */
-.our-team{
+.our-team {
     text-align: center;
 }
+
 /* team banner */
-.team{
+.team {
     /* border: 2px solid yellow; */
     padding: 20px 20px;
-    background-color: rgba(34, 34, 34, 1) ;
+    background-color: rgba(34, 34, 34, 1);
     border-radius: 18px;
 }
-.trainer-container{
+
+.trainer-container {
     /* border: 2px solid red; */
     width: 100%;
     display: grid;
-    grid-template-columns: repeat(3,1fr);
+    grid-template-columns: repeat(3, 1fr);
     gap: 20px;
 }
-.trainer{
+
+.trainer {
     position: relative;
 }
-.pic-info{
+
+.pic-info {
     position: absolute;
     top: 50%;
     left: 50%;
-    transform: translate(-166px,100px);
+    transform: translate(-166px, 100px);
 }
-.trainer-img{
+
+.trainer-img {
     width: 377px;
     height: 310px;
     /* border: 2px solid red; */
     opacity: 79%;
     margin: 0 auto;
-    
+
 }
-.trainer img{
+
+.trainer img {
     width: 100%;
     height: 100%;
     border-radius: 18px;
     object-fit: cover;
-    
+
 }
-.pic-info h6{
+
+.pic-info h6 {
     font-size: 1.25rem;
 }
-.pic-info p{
-    font-size:0.875rem;
+
+.pic-info p {
+    font-size: 0.875rem;
     color: rgba(255, 255, 255, 0.5);
 }
 
+/* ..............footer section ....................*/
+.footer-section{
+    margin-top: 88px;
+    padding: 30px 0 20px 0 ;
+    background-color: rgba(255, 255, 255, 0.1);
+}
+.contents-container{
+    /* border: 2px solid red; */
+    display: flex;
+    justify-content: space-between;
+    margin-top: 66px;
+}
+
+.ft-fitness {
+    width: 41%;
+    /* border: 2px solid red; */
+}
+
+.f-get-started {
+    max-width: 17%;
+    /* border: 2px solid red; */
+}
+
+.s-get-started {
+    max-width: 17%;
+    /* border: 2px solid red; */
+}
+
+.ft-fitness h4 {
+    font-size: 4.37rem;
+    font-weight: 800;
+    color: #E6533C;
+}
+
+.ft-fitness p {
+    margin-top: 20px;
+    font-size: 0.875rem;
+    color: rgba(255, 255, 255, 0.5);
+}
+
+.f-get-started h6,
+.s-get-started h6 {
+    font-size: 2rem;
+}
+
+.footer-description {
+    /* border: 2px solid red; */
+    margin-top: 19px;
+}
+
+.footer-description p {
+    /* border: 2px solid red; */
+    font-size: 1.4375rem;
+    color: rgba(255, 255, 255, 0.5);
+    margin-top: 20px;
+}
+
+.last-word {
+    text-align: center;
+}
+
+.last-word p {
+    font-size: 1.25rem;
+    color: rgba(255, 255, 255, 0.5);
+    margin-top: 36px;
+    margin-bottom: 35px;
+}
+
+.f-get-started {
+    margin-bottom: 79px;
+}
+hr{
+    border: 1px solid rgba(255, 255, 255, 0.1);
+}
 
 /* responsive styles */
 @media screen and (max-width:576px) {
@@ -414,30 +505,55 @@ table {
     .upper-title {
         font-size: 2rem;
     }
+
     /* bmi-banner */
     .bmi-banner {
-       flex-direction: column;
+        flex-direction: column;
     }
+
     .form-container {
         /* border: 2px solid red; */
         width: 100%;
     }
+
     .table-container {
         /* border: 2px solid yellow; */
         width: 100%;
     }
-   /* team banner section */
-   .trainer-container{
-    grid-template-columns: 1fr;
-}
-.trainer-img{
-    width: 313px;
-    height: 272px;
-    margin: 0 auto;
+
+    /* team banner section */
+    .trainer-container {
+        grid-template-columns: 1fr;
+    }
+
+    .trainer-img {
+        width: 313px;
+        height: 272px;
+        margin: 0 auto;
+
+    }
+
+    .pic-info {
+        transform: translate(-140px, 80px);
+    }
+    /* footer section */
+    .contents-container{
+        flex-direction: column;
+    }
+    .ft-fitness {
+        width: 100%;
+    }
     
-}
-.pic-info{
-    transform: translate(-140px,80px);
-}
+    .f-get-started,.s-get-started {
+        max-width: 100%;
+    }
+    .f-get-started{
+        margin-top: 40px;
+        
+    }
+    .last-word{
+        margin-top: 50px;
+    }
+
 
 }
