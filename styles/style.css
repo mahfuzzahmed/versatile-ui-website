@@ -151,25 +151,32 @@ p {
     justify-content: space-between;
     /* border: 2px solid red; */
 }
+.run-container {
+    /* border: 2px solid red; */
+}
 
 .running-img {
-    width: 366px;
-    height: 312px;
+    /* border: 2px solid red; */
+    width: 40%;
     padding: 30px;
 }
 
 .running-img img {
     width: 100%;
-    height: 100%;
+    height: 312px;
     border-radius: 18px;
     object-fit: cover;
-
 }
 
 .run-content {
+    /* border: 2px solid red; */
+    width: 40%;
     padding: 40px;
 }
 
+.run-content p {
+    line-height: 22px;
+}
 .rn-btn {
     margin-top: 34px;
     width: 224px;
@@ -180,9 +187,6 @@ p {
     border-radius: 46px;
 }
 
-.run-content p {
-    line-height: 22px;
-}
 
 /* bmi calculator upper section */
 .bmi-upper-section {
@@ -479,22 +483,28 @@ hr{
         flex-direction: column;
     }
 
+    .run-content{
+       width: 100%;
+    }
     .run-content h2 {
         font-size: 2rem;
     }
 
     .running-img {
-
+        
+        width: 100%;
+        height: 100%;
+        padding: 0 30px 30px 30px;
+    }
+    .running-img img{
+        
         width: 287px;
         height: 170px;
-        padding: 30px;
         margin: 0 auto;
     }
 
     .rn-btn {
-        /* margin-left: 43px; */
-
-
+        width: 100%;
     }
 
     /* bmi calculator */
