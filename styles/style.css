@@ -188,6 +188,16 @@ p {
     background-color: #E6533C;
     border-radius: 50%;
     display: inline-block;
+    position: relative; 
+  }
+  .dot img{
+    filter: invert(1);
+    width: 23px;
+    height: auto;
+   position: absolute;
+   transform: translate(10px, 8px);
+    
+   
   }
   .three h3{
     font-size: 24px;
@@ -500,6 +510,76 @@ table {
     color: rgba(255, 255, 255, 0.5);
 }
 
+
+/* ..............uniqueeeeee section ....................*/
+
+.unique-section {
+    width: 90%;
+    margin: 100px auto;
+    /* border: 2px solid red; */
+    /* background-color: rgba(34, 34, 34, 1);
+    backdrop-filter: blur(100px); */
+}
+
+.unique-pic {
+
+    max-width: 30%;
+    /* border: 2px solid red; */
+}
+
+.unique-pic img {
+    width: 100%;
+}
+
+.unique-grid-container {
+/* 
+    border: 2px solid yellow; */
+
+}
+
+.icon {
+    width: 50px;
+}
+
+.unique-section {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.unique-grid-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+      /* background-color: rgba(34, 34, 34, 1);
+    backdrop-filter: blur(100px); */
+}
+
+.unique-content {
+    max-width: 60%;
+    /* border: 2px solid red; */
+}
+
+.unique-content h1 {
+    font-size: 2rem;
+    margin-bottom: 15px;
+}
+
+.grid-content {
+    padding: 10px;
+    /* border: 2px solid red; */
+}
+
+.grid-content h4 {
+    font-size: 1rem;
+    margin-bottom: 10px;
+    margin-top: 10px;
+}
+
+.grid-content p {
+    font-size: 0.87rem;
+    color: rgba(255, 255, 255, 0.5);
+}
 /* ..............footer section ....................*/
 .footer-section{
     margin-top: 88px;
@@ -590,7 +670,7 @@ hr{
     }
 
     .navbar {
-        margin-top: 50px;
+        /* margin-top: 50px; */
     }
     /* get body in shape */
     .get-in-shape{
@@ -607,8 +687,29 @@ hr{
         margin-top: 100px;
         /* border: 2px solid red; */
     }
+    
+.five{
+    transform: translate(210px, -460px);
+    max-width: 145.91px;
+    max-height: 74.09px;
+    padding: 12px 17px;
+}
+.five h2{
+    font-size: 30.24px;
+    font-weight: 800;
+}
+.five p{
+    /* margin-bottom: 3px; */
+    font-size: 9.83px;
+    color: rgba(255, 255, 255, 0.65);
+}
+.three{
+    max-width: 155.74px;
+    max-height: 72.58px;
+    transform: translate(-20px, -200px);
+}
 
-    /* habits section */
+    /* .........habits section .........*/
     .card {
         grid-template-columns: 1fr;
     }
@@ -681,6 +782,41 @@ hr{
     .pic-info {
         transform: translate(-140px, 80px);
     }
+    /* unique section */
+    .grid-content{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+    .unique-section {
+        flex-direction: column;
+    }
+
+    .unique-grid-container {
+        grid-template-columns: 1fr;
+    }
+
+    .unique-content {
+        max-width: 100%;
+    }
+
+    .unique-pic {
+
+        max-width: 30%;
+        /* border: 2px solid red; */
+    }
+
+    .unique-pic {
+        max-width: 100%;
+    }
+    .unique-content h1 {
+    font-size: 1.8rem;
+    text-align: center;
+    margin-top: 30px;
+    margin-bottom: 20px;
+}
     /* footer section */
     .contents-container{
         flex-direction: column;
