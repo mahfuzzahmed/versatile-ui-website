@@ -71,6 +71,9 @@ body {
 p {
     font-size: 1rem;
 }
+.navbar-content button{
+    font-weight: 600;
+}
 
 
 .hamburger {
